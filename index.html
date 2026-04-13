@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAMNET | Sitio Web Oficial | En Cines Ahora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">Hamnet</a>
+  <ul class="nav-links">
+    <li><a href="#synopsis">Sinopsis</a></li>
+    <li><a href="#trailer">Tráiler</a></li>
+    <li><a href="#cast">Reparto</a></li>
+    <li><a href="#reviews">Críticas</a></li>
+  </ul>
+  <button id="musicBtn" class="nav-music-btn" title="Reproducir Música">
+    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+  </button>
+</nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Universal Pictures Presenta</p>
+    <h1 class="hero-title">
+      Hamnet
+      <span>Una Historia de Amor y Pérdida</span>
+    </h1>
+    <p class="hero-tagline">
+      "La historia que rompió el corazón de un padre — y dio al mundo su obra más grande."
+    </p>
+    <p class="hero-date">En Cines Ahora &nbsp;·&nbsp; Dirigida por Chloé Zhao</p>
+    <div class="hero-actions">
+      <a href="#tickets" class="btn-primary">
+        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        Reservar Entradas
+      </a>
+      <a href="#trailer" class="btn-secondary">
+        <svg class="play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        Ver Tráiler
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Desplazar</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SYNOPSIS -->
+<section class="synopsis" id="synopsis">
+  <p class="section-label">La Historia</p>
+  <h2 class="section-title">Un Dolor Que <em>Cambió la Historia</em></h2>
+  <div class="divider-line"></div>
+  <p>
+    En la Inglaterra del siglo XVI, William Shakespeare y su esposa Agnes — una curandera con un don extraordinario —
+    pierden a su amado hijo de 11 años, Hamnet, por la peste. Mientras Agnes lucha por mantener a sus hijos sobrevivientes enteros,
+    William es consumido por su dolor y su arte.
+  </p>
+  <p>
+    De esa devastadora pérdida, canaliza su tristeza en lo que se convertiría en la obra más celebrada del mundo —
+    <em>Hamlet</em>. Una historia de amor. Una historia de fantasmas. Un lamento por el hijo que el mundo olvidó.
+  </p>
+  <div class="ornament-hr"><div class="ornament-hr-diamond"></div></div>
+  <p class="credits-line">
+    Basada en la novela de <strong>Maggie O'Farrell</strong> &nbsp;·&nbsp;
+    Guion de <strong>Chloé Zhao &amp; Maggie O'Farrell</strong>
+  </p>
+</section>
+
+<!-- TRAILER -->
+<section class="trailer-section" id="trailer">
+  <p class="section-label">Tráiler Oficial</p>
+  <h2 class="section-title" style="margin-bottom:40px;">Ver el <em>Tráiler</em></h2>
+
+  <div class="trailer-wrapper playing" id="trailerWrapper">
+    <div class="trailer-thumb" id="trailerThumb">
+      <div class="play-btn-big">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <p>Reproducir Tráiler</p>
+    </div>
+    <iframe
+      class="trailer-iframe"
+      id="trailerIframe"
+      src="https://www.youtube.com/embed/xYcgQMxQwmk"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+<!-- CAST -->
+<section class="cast-section" id="cast">
+  <p class="section-label">El Reparto</p>
+  <h2 class="section-title" style="margin-bottom: 12px;">Protagonizado por</h2>
+  <div class="divider-line"></div>
+
+  <div class="cast-grid">
+    <div class="cast-card">
+      <img class="cast-avatar" src="img/jessiebuck.png" alt="Jessie Buckley">
+      <p class="cast-name">Jessie Buckley</p>
+      <p class="cast-role">Agnes Hathaway</p>
+    </div>
+    <div class="cast-card">
+      <img class="cast-avatar" src="img/paulmescal.webp" alt="Paul Mescal">
+      <p class="cast-name">Paul Mescal</p>
+      <p class="cast-role">William Shakespeare</p>
+    </div>
+    <div class="cast-card">
+      <img class="cast-avatar" src="img/emilywatson.webp" alt="Emily Watson">
+      <p class="cast-name">Emily Watson</p>
+      <p class="cast-role">Mary Shakespeare</p>
+    </div>
+    <div class="cast-card">
+      <img class="cast-avatar" src="img/joealwyn.webp" alt="Joe Alwyn">
+      <p class="cast-name">Joe Alwyn</p>
+      <p class="cast-role">Bartholomew Hathaway</p>
+    </div>
+  </div>
+</section>
+
+<!-- FILMMAKER -->
+<div style="background: var(--dark2);">
+  <div class="filmmaker">
+    <div class="filmmaker-quote">
+      <p class="section-label">Del Director</p>
+      <blockquote>
+        "Esta es una historia sobre lo que significa perder un hijo — y cómo el arte puede resucitar a los que amamos."
+      </blockquote>
+      <cite>— Chloé Zhao, Directora Ganadora del Oscar</cite>
+    </div>
+    <div class="filmmaker-badge">
+      <img class="award-icon" src="img/chloezao.webp" alt="Chloé Zhao">
+      <p>Directora Ganadora del Oscar®</p>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <p class="section-label">Aclamación Crítica</p>
+  <h2 class="section-title" style="margin-bottom: 40px;">Lo Que <em>Dicen los Críticos</em></h2>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        "Un viaje inquietante a través de un profundo dolor, bellamente capturado. Hamnet te destrozará por completo."
+      </p>
+      <p class="review-source">Críticos de Rotten Tomatoes</p>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        "Jessie Buckley y Paul Mescal dan actuaciones que definen su carrera en una película de devastadora belleza."
+      </p>
+      <p class="review-source">The Guardian</p>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★½</div>
+      <p class="review-text">
+        "Chloé Zhao transforma el dolor en algo trascendente. Una obra maestra de devastación silenciosa."
+      </p>
+      <p class="review-source">Variety</p>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section class="tickets" id="tickets">
+  <p class="section-label">Ahora en Cartelera</p>
+  <h2 class="section-title">Encuentra <em>Funciones</em> Cercanas</h2>
+  <div class="divider-line"></div>
+  <p class="tickets-subtext">
+    Experimenta Hamnet en la gran pantalla. Selecciona tu proveedor de entradas preferido a continuación.
+  </p>
+  <div class="ticket-providers">
+    <a href="https://cinepolischile.cl/" class="provider-btn" target="_blank" rel="noopener noreferrer">Cinepolis</a>
+    <a href="https://www.cinemark.cl/" class="provider-btn" target="_blank" rel="noopener noreferrer">Cinemark</a>
+    <a href="https://www.fandango.com/" class="provider-btn" target="_blank" rel="noopener noreferrer">Fandango</a>
+    <a href="https://www.cineplanet.cl/" class="provider-btn" target="_blank" rel="noopener noreferrer">Cineplanet</a>
+  </div>
+  <a href="#" class="btn-primary">Encontrar Todos los Cines</a>
+   <div class="rating-row">
+    <div class="rating-badge">Universal Pictures</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <p class="section-label">Contáctanos</p>
+  <h2 class="section-title">Envíanos un <em>Mensaje</em></h2>
+  <div class="divider-line"></div>
+
+  <form id="contact-form" class="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="city">Ciudad</label>
+      <select id="city" name="city" required>
+        <option value="">Selecciona tu ciudad</option>
+        <option value="santiago">Santiago</option>
+        <option value="valparaiso">Valparaíso</option>
+        <option value="concepcion">Concepción</option>
+        <option value="puerto-montt">Puerto Montt</option>
+        <option value="antofagasta">Antofagasta</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+  </form>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Hamnet</div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/universalpicturescanada/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.facebook.com/UniversalPicturesCanada" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://twitter.com/UniPicturesCAN" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+    <a href="https://www.youtube.com/@UniversalPicturesCanada" target="_blank" rel="noopener noreferrer">YouTube</a>
+  </div>
+  <div class="footer-divider"></div>
+  <p class="footer-legal">
+    © 2025 Universal Pictures. Todos los Derechos Reservados.<br/>
+    Dirigida por Chloé Zhao · Guion de Chloé Zhao &amp; Maggie O'Farrell · Basada en la novela de Maggie O'Farrell<br/>
+    Universal Pictures Canadá
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
