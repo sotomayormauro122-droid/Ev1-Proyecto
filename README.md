@@ -28,7 +28,3 @@ main
 develop
 feature/estructura
 feature/estilos
-
-## Repositorio
-
-Pegar aquí el link de GitHub
